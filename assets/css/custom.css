@@ -1,0 +1,38 @@
+@import url("roboto.css");
+@import url("robotomono.css");
+
+body {
+  color: #36454f;
+  font-family: "Roboto", sans-serif;
+}
+
+legend {
+  font-size: 16px;
+}
+
+.btn-default {
+  color: #777777;
+  background-color: #f5f5f5;
+  border-color: #ccc;
+}
+
+.panel-default > .panel-heading {
+  color: #777777;
+}
+.panel-title {
+  color: #777777;
+}
+
+.text-muted a {
+  color: #777777;
+}
+
+.text-muted a:hover,
+.text-muted a:focus {
+  color: #333333;
+  text-decoration: none;
+}
+
+.thumbnail {
+    border: 0 none;
+}

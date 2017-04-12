@@ -1,0 +1,130 @@
+@import url("roboto.css");
+@import url("robotomono.css");
+@counter-style custom {
+  system: fixed;
+  symbols: "1" "2" "3" "4" "5" "6" "7" "8" "9";
+  suffix: " ";
+}
+html {
+  padding: 0.8em;
+}
+body {
+  max-width: 51em;
+  margin: auto;
+  color: #36454f;
+  font-family: "Roboto", sans-serif;
+}
+a {
+  color: #808080;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  text-decoration: underline;
+}
+footer {
+  border-top: 1px solid rgb(204, 204, 204); /*  */
+  border-bottom: 2px solid #dff0d8; /*  */
+  background-color: #dff0d8; /*  */
+  font-size: .9em;
+}
+
+hr {
+  border-color: #bfbfbf;
+  border-style: solid none none none;
+}
+hr.double {
+  border-color: #bfbfbf;
+  border-style: solid none solid none;
+  height: 0.3em;
+}
+ol {
+  list-style: custom;
+  margin-left: 0;
+  padding: 1.5em;
+  background: #d3d3d3;
+  font-family: "Roboto Mono", monospace;
+  font-size: small;
+}
+ol li {
+  background: #e5e5e5;
+  border-left: 1px solid #808080; /*#a52a2a*/
+  padding: 0.2em 0.2em 0.2em 1em;
+  margin-left: 1.5em;
+  color: #808080;
+}
+ol li:nth-child(odd) {
+background-color: #ffffff;
+}
+pre {
+  padding: 0.5em;
+  background-color: #e5e5e5;
+  font-family: "Roboto Mono", monospace;
+  white-space: pre-line;
+  font-size: small;
+}
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: .2em;
+  vertical-align: middle;
+  border-top: .4em dashed;
+  border-top: .4em solid \9;
+  border-right: .4em solid transparent;
+  border-left: .4em solid transparent;
+}
+/* chevrons https://codepen.io/jonneal/pen/kptBs
+ */
+.chevron::before {
+  border-style: solid;
+  border-width: 0.25em 0.25em 0 0;
+  content: '';
+  display: inline-block;
+  height: 0.45em;
+  left: 0.15em;
+  position: relative;
+  top: 0.15em;
+  transform: rotate(-45deg);
+  vertical-align: top;
+  width: 0.45em;
+}
+.chevron.right:before {
+    left: 0;
+    transform: rotate(45deg);
+}
+.chevron.bottom:before {
+    top: 0;
+    transform: rotate(135deg);
+}
+.chevron.left:before {
+    left: 0.25em;
+    transform: rotate(-135deg);
+}.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
+}
+.visible {
+  visibility: visible;
+}
+.input {
+  padding: 0  .2em;
+  color: #36454f;
+  font-family: "Roboto", sans-serif;
+}
+.select {
+  padding: 0 .2em;
+  color: #36454f;
+  font-family: "Roboto", sans-serif;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+    margin: auto;
+
+  }
+}

@@ -1,0 +1,237 @@
+/* Custom styles
+-------------------------------------------------- */
+
+/* Change sticky-footer.css */
+body {
+  margin-bottom: 40px;
+}
+.footer {
+  height: 40px;
+  border-top: thin #888888 solid;
+  background-color: #ffffff;
+  font-size: .9em;
+}
+/*
+.footer {
+  background-image: linear-gradient(to bottom, #d7c8f0 0px, #9174c1 100%);
+  background-repeat: repeat-x;
+  border-color: #bfacde;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25) inset, 0px 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: #e2d5f7;
+  font-size: .9em;
+}
+*/
+.footer .container .text-muted {
+  margin: 10px 0;
+}
+.footer .container .text-muted a {
+  color: #888888;
+}
+.footer .container .text-muted a:hover,
+.footer .container .text-muted a:focus {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+/* Change font-weight of label */
+label {
+  font-weight: normal;
+}
+
+/* Change legend font size */
+legend {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+/* Change input font family */
+input,
+select,
+textarea {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* Change breadcrumb separator */
+.breadcrumb a {
+  color: #6c6c6c;
+}
+.breadcrumb > li + li:before {
+  padding: 0 5px;
+  color: #ccc;
+  content: "|\00a0";
+}
+
+/* Change btn-default colors */
+.btn-custom {
+  color: #fff;
+  background-color: #bfacde; /* #9174c1 #5bc0de */
+  border-color: #e2d5f7; /* #46b8da */
+}
+.btn-custom:focus,
+.btn-custom.focus {
+  color: #fff;
+  background-color: #d7c8f0; /* #31b0d5 */
+  border-color: #6339a7; /* #1b6d85 */
+}
+.btn-custom:hover {
+  color: #fff;
+  background-color: #d7c8f0; /* #31b0d5 */
+  border-color: #bfacde; /* #269abc */
+}
+.btn-custom:active,
+.btn-custom.active,
+.open > .dropdown-toggle.btn-custom {
+  color: #fff;
+  background-color: #d7c8f0; /* #31b0d5 */
+  border-color: #bfacde; /* #269abc */
+}
+.btn-custom:active:hover,
+.btn-custom.active:hover,
+.open > .dropdown-toggle.btn-custom:hover,
+.btn-custom:active:focus,
+.btn-custom.active:focus,
+.open > .dropdown-toggle.btn-custom:focus,
+.btn-custom:active.focus,
+.btn-custom.active.focus,
+.open > .dropdown-toggle.btn-custom.focus {
+  color: #fff;
+  background-color: #bfacde; /* #269abc */
+  border-color: #6339a7; /* #1b6d85 */
+}
+.btn-custom.disabled,
+.btn-custom[disabled],
+fieldset[disabled] .btn-custom,
+.btn-custom.disabled:hover,
+.btn-custom[disabled]:hover,
+fieldset[disabled] .btn-custom:hover,
+.btn-custom.disabled:focus,
+.btn-custom[disabled]:focus,
+fieldset[disabled] .btn-custom:focus,
+.btn-custom.disabled.focus,
+.btn-custom[disabled].focus,
+fieldset[disabled] .btn-custom.focus,
+.btn-custom.disabled:active,
+.btn-custom[disabled]:active,
+fieldset[disabled] .btn-custom:active,
+.btn-custom.disabled.active,
+.btn-custom[disabled].active,
+fieldset[disabled] .btn-custom.active {
+  background-color: #9174c1; /* #5bc0de */
+  border-color: #e2d5f7; /* #46b8da */
+}
+.btn-custom .badge {
+  color: #9174c1; /* #5bc0de */
+  background-color: #fff;
+}
+
+/* Change form-control focus effects */
+.form-control:focus {
+  border-color: #bfacde; /*  */
+}
+
+.input_1_17 {
+    font-size: 1.17em;
+}
+
+/* Change text-align for form-horizontal control-label to left */
+.form-horizontal .control-label {
+  text-align: left;
+}
+
+/* Change navbar-default colors */
+.navbar-custom {
+  background-image: linear-gradient(to bottom, #d7c8f0 0px, #9174c1 100%);
+  background-repeat: repeat-x;
+  border-color: #bfacde;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25) inset, 0px 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: #e2d5f7;
+}
+.navbar-custom .navbar-brand {
+  color: #6339a7;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus {
+  color: #e5daf9;
+  background-color: transparent;
+}
+.navbar-custom .navbar-nav > li > a {
+  color: #e5daf9;
+}
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+  color: #ffffff;
+  background-color: (#ffffff, 0);
+}
+.navbar-custom .navbar-nav > .open > a,
+.navbar-custom .navbar-nav > .open > a:hover,
+.navbar-custom .navbar-nav > .open > a:focus {
+  color: #9174c1;
+  background-color: #e2d5f7;
+}
+.navbar-custom .navbar-nav .open .dropdown-menu > li > a {
+  color: #6339a7; /* #9D9D9D */
+}
+.navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
+  color: #ffffff;
+  background-color: #9174c1;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #e2d5f7;
+}
+
+.panel-custom {
+  border-color: #bfacde;
+}
+.panel-custom > .panel-heading {
+  color: #6339a7;
+  background-color: #e2d5f7;
+  border-color: #bfacde;
+}
+.panel-custom > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #bfacde;
+}
+.panel-custom > .panel-heading .badge {
+  color: #e2d5f7;
+  background-color: #6339a7;
+}
+.panel-custom > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #bfacde;
+}
+.panel-custom > .panel-heading a:hover {
+  color: #888888;
+  text-decoration: none;
+}
+.panel-custom > .panel-heading a:focus {
+  text-decoration: none;
+}
+
+.panel-default > .panel-heading a:hover {
+  color: #888888;
+  text-decoration: none;
+}
+.panel-default > .panel-heading a:focus {
+  text-decoration: none;
+}
+
+/* Create small-caps class for coverting lowercase to small capitals */
+.small_caps {
+    font-variant: small-caps;
+}
+
+/* Create text-muted a */
+.text-muted a {
+  color: #888888;
+}
+.text-muted a:hover,
+.text-muted a:focus {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
