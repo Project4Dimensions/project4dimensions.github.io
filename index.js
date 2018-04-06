@@ -60,8 +60,7 @@ elementInner(
     "…space to disperse, intersperse…<br>"
             + "’n lace computational warp ’n weft.<br>"
             + "<br>"
-            + "<a href=\"/detectClicks/\">detectClicks</a><br>"
-            + "<a href=\"/detectInternet/\">detectInternet</a><br>"
+            + "<a href=\"/jsOnclickDisabled/\">jsOnclickDisabled</a><br>"
 );
 
 
