@@ -63,8 +63,8 @@ elementInner(
             + "<a href=\"/jsAccordion/\">jsAccordion</a><br>"
             + "<a href=\"/jsChangeLang/\">jsChangeLang</a><br>"
             + "<a href=\"/jsDetectClicks/\">jsDetectClicks</a><br>"
-            + "<a href=\"/pyBookmarks/\">pyBookmarks</a>"
             + "<a href=\"/jsOnclickDisabled/\">jsOnclickDisabled</a><br>"
+            + "<a href=\"/pyBookmarks/\">pyBookmarks</a>"
 );
 
 
