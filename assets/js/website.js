@@ -1,4 +1,4 @@
-/* validated with JSLint edition 2018-02-27 (http://jslint.com/)
+/* validated with JSLint edition 2018-03-14 (http://jslint.com/)
  * no errors reported (JSLint options: Assume… a browser)
  */
 
@@ -99,16 +99,16 @@ function headLinkCreate(rel, type, color, sizes, href) {
     a.insertBefore(aa, a.children[4]);
 }
 
-function headFavicons() {
+function headFavicons(path) {
     "use strict";
-    headLinkCreate("shortcut icon", "", "", "", "../assets/favicons/favicon.ico");
-    headLinkCreate("mask-icon", "", "#5bbad5", "", "../assets/favicons/safari-pinned-tab.svg");
-    headLinkCreate("manifest", "", "", "", "../assets/favicons/manifest.json");
-    headLinkCreate("icon", "image/png", "", "16x16", "../assets/favicons/favicon-16x16.png");
-    headLinkCreate("icon", "image/png", "", "32x32", "../assets/favicons/favicon-32x32.png");
-    headLinkCreate("apple-touch-icon", "", "", "180x180", "../assets/favicons/apple-touch-icon.png");
+    headLinkCreate("shortcut icon", "", "", "", path.concat("assets/favicons/favicon.ico"));
+    headLinkCreate("mask-icon", "", "#5bbad5", "", path.concat("assets/favicons/safari-pinned-tab.svg"));
+    headLinkCreate("manifest", "", "", "", path.concat("assets/favicons/manifest.json"));
+    headLinkCreate("icon", "image/png", "", "16x16", path.concat("assets/favicons/favicon-16x16.png"));
+    headLinkCreate("icon", "image/png", "", "32x32", path.concat("assets/favicons/favicon-32x32.png"));
+    headLinkCreate("apple-touch-icon", "", "", "180x180", path.concat("assets/favicons/apple-touch-icon.png"));
     headMetaCreate("name", "theme-color", "#ffffff", 1);
-    headMetaCreate("name", "msapplication-config", "../assets/favicons/browserconfig.xml", 1);
+    headMetaCreate("name", "msapplication-config", path.concat("assets/favicons/browserconfig.xml"), 1);
 }
 
 function navbarTop() {
@@ -507,7 +507,7 @@ function checkbox(parent, name, value, txt, onclick) {
     a.appendChild(aa);
 }
 
-function textarea(parent, name, rows, description) {
+function textarea(parent, id, rows, description) {
     "use strict";
     var a = document.getElementById(parent);
     var aa = document.createElement("div");
@@ -515,6 +515,7 @@ function textarea(parent, name, rows, description) {
     var aab = document.createElement("textarea");
     aa.setAttribute("class", "form-group");
     aaa.setAttribute("class", "sr-only");
+    aab.setAttribute("id", id);
     aab.setAttribute("name", name);
     aab.setAttribute("placeholder", description);
     aab.setAttribute("rows", rows);
